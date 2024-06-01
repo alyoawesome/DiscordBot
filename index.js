@@ -16,4 +16,4 @@ Bot.on("message", (message)=>{
 })
 
 //Login
-Bot.login("DiscordBotToken")
+Bot.login(process.env.TOKEN)
