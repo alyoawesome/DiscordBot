@@ -1,6 +1,6 @@
 //Dependencies
 const Discord = require("discord.js")
-
+const keep_alive = require('./keep_alive.js');
 //Variables
 const Bot = new Discord.Client()
 
@@ -17,3 +17,4 @@ Bot.on("message", (message)=>{
 
 //Login
 Bot.login(process.env.TOKEN)
+keep_alive();
